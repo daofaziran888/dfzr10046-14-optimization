@@ -29,3 +29,18 @@ class EntryPayload(BaseModel):
 class ActionPayload(BaseModel):
     action: str
     remark: str | None = None
+    entry_ids: list[Any] | None = None
+    ids: list[Any] | None = None
+    selectedIds: list[Any] | None = None
+    entryIds: list[Any] | None = None
+    values: dict[str, Any] | None = None
+    batch_id: str | None = None
+    receipt_no: str | None = None
+    review_id: str | int | None = None
+    source_id: str | int | None = None
+    grain_id: str | None = None
+    reviewer_group: str | None = None
+    reviewer: str | None = None
+    decision: str | None = None
+    expected_version: int | None = None
+    idempotency_key: str | None = None
